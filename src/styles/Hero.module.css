@@ -1,0 +1,64 @@
+.HeroContainer {
+  display: flex;
+  align-items: center;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+}
+
+.HeroContainer span {
+  font-size: clamp(16px, 6vw, 18px);
+  letter-spacing: 3px;
+  color: #ff9e0c;
+}
+
+.HeroContainer h2 {
+  font-size: clamp(30px, 5vw, 80px);
+  text-align: left;
+  line-height: 1.2;
+}
+
+.HeroContainer p {
+  font-size: clamp(16px, 6vw, 18px);
+  line-height: 1.4;
+  letter-spacing: 1px;
+  margin: 10px 0px 10px 0px;
+}
+.HeroContainer button {
+  margin-top: 40px;
+  border-radius: 15px;
+  background: rgb(var(--background-start-rgb));
+  box-shadow: 20px 15px 20px var(--button-shadow1),
+    -20px -15px 20px var(--button-shadow2);
+  padding: 20px 40px 20px 40px;
+  transition: 0.5s;
+}
+
+.HeroContainer button:hover {
+  transform: scale(1.1);
+  box-shadow: -20px 15px 20px var(--button-shadow1),
+    20px -15px 20px var(--button-shadow2);
+}
+
+@media (min-width: 35em) and (max-width: 55em) {
+  .HeroContainer {
+    flex-direction: column;
+  }
+  .imageContainer {
+    display: none;
+  }
+}
+
+@media (max-width: 35em) {
+  .HeroContainer h2 {
+    margin: 10px 0px 10px 0px;
+  }
+  .imageContainer {
+    display: none;
+  }
+}
+
+.imageContainer {
+  margin-left: 4rem;
+}

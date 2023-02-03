@@ -1,0 +1,27 @@
+.projectItem {
+  padding: 2rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  background: rgb(var(--background-start-rgb));
+  box-shadow: 20px 15px 20px var(--button-shadow1),
+    -20px -15px 20px var(--button-shadow2);
+  transition: 1s;
+  margin: 2rem;
+}
+
+.projectItem > div {
+  position: relative;
+  width: 600px;
+  height: 400px;
+}
+
+@media (max-width: 768px) {
+  .projectItem {
+    margin: 1rem;
+  }
+  .projectItem > div {
+    width: 270px;
+    height: 180px;
+  }
+}
