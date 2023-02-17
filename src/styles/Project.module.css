@@ -1,27 +1,28 @@
 .projectItem {
   padding: 2rem;
-  border-radius: 2rem;
-  border: 1px solid transparent;
-  border-radius: 15px;
+  border: 2px solid transparent;
+  border-radius: 10px;
   background: rgb(var(--background-start-rgb));
-  box-shadow: 20px 15px 20px var(--button-shadow1),
-    -20px -15px 20px var(--button-shadow2);
+  box-shadow: 10px 10px 20px var(--button-shadow1),
+    -10px -10px 20px var(--button-shadow2);
   transition: 1s;
   margin: 2rem;
+  max-height: 800px;
+  max-width: 1000px;
+  display: flex;
 }
 
-.projectItem > div {
-  position: relative;
-  width: 600px;
-  height: 400px;
+.image {
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px var(--button-shadow1),
+    -5px -5px 0px var(--button-shadow2);
 }
 
 @media (max-width: 768px) {
   .projectItem {
     margin: 1rem;
-  }
-  .projectItem > div {
-    width: 270px;
-    height: 180px;
+    flex-direction: column;
+    max-width: 750px;
+    padding: 20px;
   }
 }

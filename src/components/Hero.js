@@ -1,5 +1,6 @@
 import Image from "next/image";
 import heroImage from "@/../public/images/show.svg";
+import Link from "next/link";
 import style from "@/styles/Hero.module.css";
 
 export default function Hero({ data }) {
@@ -14,7 +15,10 @@ export default function Hero({ data }) {
           <br />
           keeping security in mind
         </p>
-        <button>My Portfolio</button>
+        <button>
+          <Link href={"#projects"}>
+          My Projects</Link>
+          </button>
       </div>
       <div className={style.imageContainer}>
         <Image alt="" src={heroImage} priority="true" />

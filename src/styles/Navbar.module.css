@@ -15,7 +15,6 @@
 .primaryMenu span {
   color: rgb(var(--extra-color-rgb));
   margin-inline-end: 8px;
-  
 }
 
 .primaryMenu li {
@@ -32,42 +31,20 @@
   transform: scale(1.1);
 }
 
-/* .primaryMenu a:hover{
-  transform: scale(1.5);
-} */
-
-.resumeButton {
-  border-radius: 15px;
-  background: rgb(var(--background-start-rgb));
-  box-shadow: 20px 15px 20px var(--button-shadow1),
-    -20px -15px 20px var(--button-shadow2);
-  padding: 20px 40px 20px 40px;
-  transition: 0.5s;
-}
-
-.resumeButton:hover {
-  transform: scale(1.1);
-  box-shadow: -20px 15px 20px var(--button-shadow1),
-    20px -15px 20px var(--button-shadow2);
-}
-
 @media (min-width: 768px) {
   .primaryMenu {
-    padding-inline: clamp(2rem, 6rem, 9rem);
-    padding-block: 2rem;
-    border-radius: 3rem;
+    padding-inline: clamp(1.4rem, 3rem, 5rem);
+    padding-block: 1.4rem;
+    border-radius:10px 10px 60px 60px;
   }
 }
 
 @media (max-width: 768px) {
   .mobileNavButton {
-    display: block;
     position: absolute;
+    display: block;
     z-index: 999;
     aspect-ratio: 1;
-    top: 40px;
-    right: 40px;
-
     border-radius: 50%;
     background: rgb(var(--background-start-rgb));
     box-shadow: 20px 15px 20px var(--button-shadow1),
@@ -89,9 +66,6 @@
   }
   .primaryMenu[data-visible="false"] {
     transform: translate(100%);
-  }
-  .resumeButton {
-    display: none;
   }
 }
 
