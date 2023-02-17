@@ -35,12 +35,14 @@ export default function Navbar() {
     <header className="mt-10">
       <div className="flex justify-around items-center ">
         <div className={sacramento.className}>
+          <Link href="/">
           <span
             className="font-bold text-3xl md:text-5xl"
             style={{ color: "rgb(var( --extra-color-rgb))" }}
           >
             Aman Kumar.
           </span>
+          </Link>
         </div>
         <div className=" -mt-8">
           <button
