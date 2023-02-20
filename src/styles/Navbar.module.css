@@ -43,7 +43,7 @@
   .mobileNavButton {
     position: absolute;
     display: block;
-    z-index: 999;
+    z-index: 99999;
     aspect-ratio: 1;
     border-radius: 50%;
     background: rgb(var(--background-start-rgb));
@@ -54,7 +54,7 @@
 
   .primaryMenu {
     position: fixed;
-    inset: 0 0 0 30%;
+    inset: 0 0 0 0;
     flex-direction: column;
     justify-content: center;
     padding: min(30vh, 10rem) 2em;

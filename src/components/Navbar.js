@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import { Sacramento } from "@next/font/google";
 import Link from "next/link";
 import style from "../styles/Navbar.module.css";
@@ -9,8 +9,8 @@ const sacramento = Sacramento({
   weight: "400",
 });
 
-export default function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+export default function Navbar({isMenuOpen, setIsMenuOpen}) {
+ 
   const menu = [
     {
       label: "Home",
@@ -36,12 +36,12 @@ export default function Navbar() {
       <div className="flex justify-around items-center ">
         <div className={sacramento.className}>
           <Link href="/">
-          <span
-            className="font-bold text-3xl md:text-5xl"
-            style={{ color: "rgb(var( --extra-color-rgb))" }}
-          >
-            Aman Kumar.
-          </span>
+            <span
+              className="font-bold text-3xl md:text-5xl"
+              style={{ color: "rgb(var( --extra-color-rgb))" }}
+            >
+              Aman Kumar.
+            </span>
           </Link>
         </div>
         <div className=" -mt-8">

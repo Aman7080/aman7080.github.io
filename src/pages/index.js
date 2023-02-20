@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
@@ -6,6 +7,11 @@ import Projects from "@/components/Projects";
 import About from "@/components/About";
 import Socials from "@/components/Socials";
 export default function Home() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  useEffect(() => {
+    console.log(isMenuOpen);
+  }, [isMenuOpen]);
+
   return (
     <>
       <Head>
@@ -15,8 +21,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <Navbar />
+      <main style={{ position: isMenuOpen ? "fixed" : "static" }}>
+        <Navbar isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
         <Socials />
         <Hero />
         <About />

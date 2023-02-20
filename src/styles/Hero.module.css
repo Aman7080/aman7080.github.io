@@ -10,7 +10,12 @@
 .HeroContainer span {
   font-size: clamp(16px, 6vw, 18px);
   letter-spacing: 3px;
-  color: #ff9e0c;
+  color: blue;
+}
+@media (prefers-color-scheme: dark) {
+  .HeroContainer span {
+    color: #ff9e0c;
+  }
 }
 
 .HeroContainer h2 {
@@ -53,7 +58,7 @@
 }
 
 @media (max-width: 35em) {
-  .HeroContainer{
+  .HeroContainer {
     margin-top: 8rem;
     max-width: 90%;
   }
